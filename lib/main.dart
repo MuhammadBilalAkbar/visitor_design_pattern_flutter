@@ -10,25 +10,25 @@ abstract interface class Visitor {
 // Concrete visitor implementation
 class FeedVisitor implements Visitor {
   @override
-  void visitLion(Lion animal) => print("Feeding meat to a lion.");
+  void visitLion(Lion animal) => print('Feeding meat to a lion.');
 
   @override
-  void visitElephant(Elephant animal) => print("Feeding hay to an elephant.");
+  void visitElephant(Elephant animal) => print('Feeding hay to an elephant.');
 
   @override
-  void visitDog(animal) => print("Feeding meat to a dog.");
+  void visitDog(animal) => print('Feeding meat to a dog.');
 }
 
 class HealthCheckVisitor implements Visitor {
   @override
-  void visitLion(Lion animal) => print("Conducting health check on a lion.");
+  void visitLion(Lion animal) => print('Conducting health check on a lion.');
 
   @override
   void visitElephant(Elephant animal) =>
-      print("Conducting health check on an elephant.");
+      print('Conducting health check on an elephant.');
 
   @override
-  void visitDog(animal) => print("Conducting health check on a dog.");
+  void visitDog(animal) => print('Conducting health check on a dog.');
 }
 
 // Element interface
